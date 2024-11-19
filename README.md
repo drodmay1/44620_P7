@@ -58,7 +58,7 @@ Sentiment analysis is performed on the retrieved data, and summaries are generat
 - Add your client_id, client_secret, and redirect_uri in the code.
 
 4. Run the script to fetch data and perform analysis:
-```python <auth>.py
+- python <auth>.py
 - View results in the terminal and the generated files (spotify_tracks.html and others).
 
 ## Results
