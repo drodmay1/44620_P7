@@ -1,25 +1,75 @@
 # Final Project: Article Summarizer
+# Spotify Tracks Sentiment Analysis
 
-Complete the tasks in the Python Notebook in this repository.
-Make sure to add and push the pkl or text file of your scraped html (this is specified in the notebook)
+## Overview
+This project uses Spotify API to retrieve saved ved tracks from a Spotify profile and analyze their metadata.
+Sentiment analysis is performed on the retrieved data, and summaries are generated based on both token-based and lemma-based polarity scores.
 
-## Rubric
+## Features
+- Retrieve saved Spotify tracks using the Spotify API.
+- Convert track metadata into an HTML file for easy viewing.
+- Perform sentiment analysis using token-based and lemma-based approaches.
+- Generate summaries of the data based on sentiment polarity.
 
-* (Question 1) Article html stored in separate file that is committed and pushed: 1 pt
-* (Question 2) Polarity score printed with an appropriate label: 1 pt
-* (Question 2) Number of sentences printed: 1 pt
-* (Question 3) Correct (or equivalent in the case of multiple tokens with same frequency) tokens printed: 1 pt
-* (Question 4) Correct (or equivalent in the case of multiple lemmas with same frequency) lemmas printed: 1 pt
-* (Question 5) Histogram shown with appropriate labelling: 1 pt
-* (Question 6) Histogram shown with appropriate labelling: 1 pt
-* (Question 7) Cutoff score seems appropriate given histograms: 2 pts (1/score)
-* (Question 8) Summary contains a shortened version of the article (less than half the number of sentences): 1 pt
-* (Question 8) Summary sentences are in the same order as they appeared in the original article: 1 pt
-* (Question 9) Polarity score printed with an appropriate label: 1 pt
-* (Question 9) Number of sentences printed: 1 pt
-* (Question 10) Summary contains a shortened version of the article (less than half the number of sentences): 1 pt
-* (Question 10) Summary sentences are in the same order as they appeared in the original article: 1 pt
-* (Question 11) Polarity score printed with an appropriate label: 1 pt
-* (Question 11) Number of sentences printed: 1 pt
-* (Question 12) Thoughtful answer based on reported polarity scores: 1 pt
-* (Question 13) Thoughtful answer based on summaries: 1 pt
+## Process
+1. **Data Retrieval**:
+   - Spotify API is used to fetch user's saved tracks.
+   - Python processes the API response to create an HTML file (`spotify_tracks.html`)
+
+2. **Sentiment Analysis**:
+   - Sentences in the HTML content are analyzed using `TextBlob` for polarity scores.
+   - Two approaches are used:
+     - **Token-Based**: Analyzing sentences directly as they are.
+     - **Lemma-Based**: Analyzing sentences after lemmatization using `spaCy`.
+
+3. **Summary Generation**:
+   - Summaries are created by selecting sentences with polarity scores above a determined cutoff.
+   - Both token-based and lemma-based summaries are generated.
+
+4. **Visualization**:
+   - Histograms are created to visualize the distribution of sentiment polarity scores.
+
+## Project Files
+- `spotify_tracks.html`: The HTML file displaying track metadata.
+- `spotify_tracks.pkl`: The pickle file containing the HTML content.
+- Python scripts for:
+  - Fetching data from the Spotify API.
+  - Performing sentiment analysis and visualization.
+  - Generating summaries.
+
+## Technologies Used
+- **Python**:
+  - Libraries: `spotipy`, `textblob`, `spaCy`, `matplotlib`, `pickle`, `BeautifulSoup`.
+- **Spotify API** for data retrieval.
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+
+2. Install dependencies:
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+
+3. Set up Spotify API credentials:
+Create a Spotify Developer account and set up a new app.
+Add your client_id, client_secret, and redirect_uri in the code.
+
+4. Run the script to fetch data and perform analysis:
+python <auth>.py
+View results in the terminal and the generated files (spotify_tracks.html and others).
+
+## Results
+Sentiment polarity scores of the original data and summaries.
+Visualizations of sentiment polarity distributions.
+Clean and concise summaries based on token and lemma polarity scores.
+
+## Acknowledgments
+*Spotify API for providing track metadata.
+**TextBlob and spaCy for sentiment analysis and natural language processing.
+Matplotlib for data visualization.
+
+
+
+
