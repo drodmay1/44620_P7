@@ -70,6 +70,7 @@ Sentiment analysis is performed on the retrieved data, and summaries are generat
 - Spotify API for providing track metadata.
 - TextBlob and spaCy for sentiment analysis and natural language processing.
 - Matplotlib for data visualization.
+- Dr. Case for an amazing class
 
 
 
