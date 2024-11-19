@@ -2,10 +2,10 @@
 # Spotify Tracks Sentiment Analysis
 
 ## Overview
-This project uses Spotify API to retrieve saved ved tracks from a Spotify profile and analyze their metadata.
+This project uses Spotify API to retrieve saved ved tracks from a Spotify profile and analyze data.
 Sentiment analysis is performed on the retrieved data, and summaries are generated based on both token-based and lemma-based polarity scores.
 
-## Features
+## Specs
 - Retrieve saved Spotify tracks using the Spotify API.
 - Convert track metadata into an HTML file for easy viewing.
 - Perform sentiment analysis using token-based and lemma-based approaches.
@@ -13,11 +13,11 @@ Sentiment analysis is performed on the retrieved data, and summaries are generat
 
 ## Process
 1. **Data Retrieval**:
-   - Spotify API is used to fetch user's saved tracks.
-   - Python processes the API response to create an HTML file (`spotify_tracks.html`)
+   - Get saved Spotify tracks with the Spotify API
+   - Python creates an HTML file (spotify_tracks.html) from the API response.
 
 2. **Sentiment Analysis**:
-   - Sentences in the HTML content are analyzed using `TextBlob` for polarity scores.
+   - The HTML sentences are analyzed with `TextBlob` for polarity scores.
    - Two approaches are used:
      - **Token-Based**: Analyzing sentences directly as they are.
      - **Lemma-Based**: Analyzing sentences after lemmatization using `spaCy`.
