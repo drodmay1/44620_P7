@@ -45,12 +45,13 @@ Sentiment analysis is performed on the retrieved data, and summaries are generat
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone <https://github.com/drodmay1/44620_P7.git>
+   cd <Users/davidrodriguez/Documents/44620 web mining and applied NPL/44620_p7
 
 2. Install dependencies:
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
+   ```bash
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
 
 3. Set up Spotify API credentials:
 Create a Spotify Developer account and set up a new app.
