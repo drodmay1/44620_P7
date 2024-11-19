@@ -46,7 +46,7 @@ Sentiment analysis is performed on the retrieved data, and summaries are generat
 1. Clone the repository:
    ```bash
    git clone <https://github.com/drodmay1/44620_P7.git>
-   cd <Users/davidrodriguez/Documents/44620 web mining and applied NPL/44620_p7
+   cd <Users/davidrodriguez/Documents/44620 web mining and applied NPL/44620_p7>
 
 2. Install dependencies:
    ```bash
@@ -54,22 +54,22 @@ Sentiment analysis is performed on the retrieved data, and summaries are generat
    python -m spacy download en_core_web_sm
 
 3. Set up Spotify API credentials:
-Create a Spotify Developer account and set up a new app.
-Add your client_id, client_secret, and redirect_uri in the code.
+- Create a Spotify Developer account and set up a new app.
+- Add your client_id, client_secret, and redirect_uri in the code.
 
 4. Run the script to fetch data and perform analysis:
-python <auth>.py
-View results in the terminal and the generated files (spotify_tracks.html and others).
+```python <auth>.py
+- View results in the terminal and the generated files (spotify_tracks.html and others).
 
 ## Results
-Sentiment polarity scores of the original data and summaries.
-Visualizations of sentiment polarity distributions.
-Clean and concise summaries based on token and lemma polarity scores.
+- Sentiment polarity scores of the original data and summaries.
+- Visualizations of sentiment polarity distributions.
+- Clean and concise summaries based on token and lemma polarity scores.
 
 ## Acknowledgments
-*Spotify API for providing track metadata.
-**TextBlob and spaCy for sentiment analysis and natural language processing.
-Matplotlib for data visualization.
+- Spotify API for providing track metadata.
+- TextBlob and spaCy for sentiment analysis and natural language processing.
+- Matplotlib for data visualization.
 
 
 
